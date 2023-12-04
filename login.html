@@ -3,19 +3,25 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Login</title>
+  <title>Strona logowania</title>
+  <!-- nazwa widoczna w karcie przeglądarki -->
+  <link rel="stylesheet" href="login.css">
+  <!-- wczytanie pliku css do edytowania stylów elementów -->
 </head>
-
+<!-- Definicja elemtentów main, h1, form po id (#) i klas (.) do ktorych odwoluje sie plik css.
+  Placeholder w elemencie inputu form podpowiada uzytkownikowi jakie dane są oczekiwane -->
 <body>
-  <main id="main-holder">
-    <h1 id="login-header">Login</h1>
-
+  <main id="main-holder"> 
+    
+    <h1>Login</h1>
+    <!-- utworzenie formularza zbierajacego dane username, password a takze przycisk do sprawdzenia poprawnosci danych -->
     <form id="login-form">
       <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
       <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
       <input type="submit" value="Login" id="login-form-submit">
     </form>
-
   </main>
+  <script type="text/javascript" src="login.js"></script>
+  <!-- wczytanie pliku js ze skryptem odpowiadajacym za walidacje -->
 </body>
 </html>
